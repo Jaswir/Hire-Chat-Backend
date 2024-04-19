@@ -154,6 +154,8 @@ def get_response(prompt, company):
                         "corpusId": corpus_id,
                         "semantics": 0,
                         "metadataFilter": "",
+                        "lexicalInterpolationConfig": {"lambda": 0.5},
+                        "lambda"
                         "dim": [],
                     }
                 ],
