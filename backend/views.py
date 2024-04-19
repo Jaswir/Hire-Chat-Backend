@@ -161,7 +161,7 @@ def get_response(prompt, company):
                     {
                         "debug": False,
                         "chat": {"store": True, "conversationId": ""},
-                        "maxSummarizedResults": 3,
+                        "maxSummarizedResults": 2,
                         "responseLang": "eng",
                         "summarizerPromptName": "vectara-experimental-summary-ext-2023-12-11-large",
                         "factualConsistencyScore": True,
