@@ -26,13 +26,15 @@ SECRET_KEY = "django-insecure-&e(0h#0+ybvan2c1-d+ip3_m5mkh)5q5i787lw1_jo_(45q61z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "*"]
-
+ALLOWED_HOSTS = ["127.0.0.1", "hire-chat-backend-500d6356f1a0.herokuapp.com"]
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = ("http://localhost:5173",)
 
 # Application definition
 
 INSTALLED_APPS = [
     "backend",
+    "corsheaders",
     "drf_yasg",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
