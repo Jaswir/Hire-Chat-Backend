@@ -261,7 +261,7 @@ def askGPT3(prompt, raw_answer):
 
     client = OpenAI(api_key=environ.get("OPEN_AI_KEY"))
 
-    print("key: ", environ.get("OPEN_AI_KEY"))
+    # print("key: ", environ.get("OPEN_AI_KEY"))
 
     input = prompt + "this is the raw answer use it in your response: " + raw_answer
 
@@ -285,7 +285,7 @@ def askGPT3(prompt, raw_answer):
 def testGPT3(request, prompt):
     client = OpenAI(api_key=environ.get("OPEN_AI_KEY"))
 
-    print("key: ", environ.get("OPEN_AI_KEY"))
+    # print("key: ", environ.get("OPEN_AI_KEY"))
 
 
     response = client.chat.completions.create(
