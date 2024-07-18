@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-&e(0h#0+ybvan2c1-d+ip3_m5mkh)5q5i787lw1_jo_(45q61z"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "hire-chat-backend-52eeedde6e28.herokuapp.com"]
 CORS_ORIGIN_ALLOW_ALL = True
