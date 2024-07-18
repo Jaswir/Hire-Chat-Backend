@@ -165,7 +165,7 @@ def get_response(prompt, company):
                         "chat": {"store": True, "conversationId": ""},
                         "maxSummarizedResults": 2,
                         "responseLang": "eng",
-                        "summarizerPromptName": "vectara-experimental-summary-ext-2023-12-11-large",
+                        "summarizerPromptName": "mockingbird-1.0-2024-07-16",
                         "factualConsistencyScore": True,
                     }
                 ],
