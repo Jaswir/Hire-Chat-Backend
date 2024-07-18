@@ -27,8 +27,7 @@ SECRET_KEY = "django-insecure-&e(0h#0+ybvan2c1-d+ip3_m5mkh)5q5i787lw1_jo_(45q61z
 DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1", "hire-chat-backend-52eeedde6e28.herokuapp.com"]
-CORS_ORIGIN_WHITELIST = ("http://localhost:5173", "https://hire-chat-demo.vercel.app")
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOWED_ORIGINS = ["http://localhost:5173", "https://hire-chat-demo.vercel.app"]
 
 # Application definition
 
